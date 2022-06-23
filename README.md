@@ -1,38 +1,45 @@
 # Movie Robot 产品手册
-Telegram Channel: https://t.me/aimovierobot 关注Channel，定期发放短期体验码。
+Telegram Channel: https://t.me/aimovierobot 作者会及时把产品的更新日志，发展动态，发到这个频道。
 
 [Movie Robot WIki](https://yee329.notion.site/Movie-Robot-Wiki-9abef8c648c840fca47a0bf308957f85)
-* [使用Movie Robot前检查清单](https://yee329.notion.site/d8479e45ecbd4ed487726f86ddcfc3fd)
 * [开发计划](https://yee329.notion.site/7015972108424f14a1f2e15bde5205b4?v=6a041b4a727c48588134db8538e2b164)
 * [更新日志](https://yee329.notion.site/231dce04132642359e4a979e6b544ffd)
-* 更多文档持续更新中......
 
-**欢迎到WIKI中心（正在编写中），查看产品的发展动态。这套WIKI我会慢慢补充内容，后续会包含完整的开发计划、产品介绍、新手指南、进阶玩法、常见问题答疑等几个板块内容，欢迎大家收藏！**
+**新人指南系列**
+* 1.[检查清单](https://www.notion.so/yee329/1-d8479e45ecbd4ed487726f86ddcfc3fd)
+* 2.[Docker应用启动与升级](https://yee329.notion.site/2-Docker-09e1db16b2b14040840bd2f5660e666c)
+* 3.[通过网页完成首次初始化](https://yee329.notion.site/3-42680818afd84891b254bfa456f3dd3e)
+* 4.[资源站点设置与养护](https://yee329.notion.site/4-28702cf23a834c2380eb8ff34de68ea5)
+* 5.[设置智能下载开启全自动观影](https://yee329.notion.site/5-745da2776daa4fc7b5e2ddb3170aa11a)
+* 6.[使用微信接收通知&搜索订阅](https://yee329.notion.site/45883b2da80c4d7b87c979ad77097a95)
+* 7.[玩转过滤器与排序规则](https://yee329.notion.site/12f6d44243194c8c96a7e000b9dde023)
 
-产品大图
+完整WIKI地址：https://yee329.notion.site/Movie-Robot-Wiki-9abef8c648c840fca47a0bf308957f85
+
+# 产品大图
 <img alt="产品大图" src="https://raw.githubusercontent.com/pofey/movie_robot/main/doc/Movie Robot.jpg"/>
 
-定时自动从豆瓣电影的想看、在看、看过中获取影音信息，然后去PT站（支持多家站点）自动检索种子，找到最佳资源后按豆瓣电影分类提交到BT下载工具下载。在下载前，会自动检查你的Emby中是否已经存在。
-基于此功能机制，还顺带具备了下列功能：
-- 将一部刚上映，或者还没上映的电影加入想看，当PT站更新时会第一时间帮你下好，被Emby扫描到后直接观看。
-- 对剧集类型的影视资源，如果你正在看一部没更新完的剧，只要pt站更新，也会帮你对比本地影音库缺少的剧集开始自动下载。
-- 支持多PT站汇总搜索打分选种
+**免责声明：本产品不提供任何影片资源，不与任何内容提供方有直接合作，所有内容均来自安装者自己配置的内容站点。配置后，本产品会利用爬虫技术以合法合理的频次，访问内容站点拉取资源。**
 
-针对新增下载和存量硬盘的影视库，机器人还可以帮你对乱七八糟下载种子名做标准化整理，整理后会按电影名+年份+tmdbid的方式存储，可以使用硬链接或复制模式的整理方式。
+## Movie Robot是什么？
+* “聪明”的自动化调度工具
+  * 影视发现与查找，多种渠道均支持多用户体系，可以让家人、朋友，通过任意渠道订阅
+    * 豆瓣APP、豆瓣小程序想看
+    * 通过微信搜索与订阅
+    * 通过私有化媒体发现服务提交订阅
+  * 订阅追新与洗版
+    * 在配置好的站点中，定时或实时，准确无误的找到订阅中想看，且符合所需品质的资源
+    * 出现更好品质值得收藏的资源时，自动完成下载、替换（删除原有）
+  * 影视文件识别与整理，网络下载好的电影或剧集，都是杂乱的名称文件或文件夹，程序会自动将这些文件，识别成标准的名称、发行年份，并整理到指定目录。
+  * 中文字幕自动下载，影片通过下载器完成后，本程序会自动启动中文字幕搜索任务，帮助你去字幕网站查找中文字幕，下载好后存储媒体服务器所需路径
+* 完全私有化产品，不依赖任何云上数据和算子
+  * 不共享任何内容和数据
+  * 全部媒体元数据，和媒体资源，均来自第三方网站
 
 # 使用须知
-* 影音是自己的终身需求，我会持续迭代更新。不过我个人认为这个领域的产品，用户越少，意味着越稳定可靠，广为流传的产品，注定因为和依赖站点或其他依赖资源产生利益冲突，影响软件功能，也影响生态平衡。所以选择封闭激活使用制度，控制用户保有量，避免成为大众产品。
-* 产品设计上已经尽量将配置复杂度降到最低，但是私有化产品部署运维有一定门槛，需要掌握诸多linux和dokcer知识。但完成初期搭建，将进入养老状态，全家畅享极致观影体验。
+**激活码获取方式：通过捐助作者168元为作者的开发以及后续持续更新所付出的时间买单来获得软件永久使用及更新的权利。[点击查看支付宝付款码](https://yee-1254270141.cos.ap-beijing.myqcloud.com/movie_robot/alipay.jpg) 支付后请备注邮箱接收激活码**
 
-激活码获取方式：
-* 168元获得永久使用及更新权利，及最终可能获得源代码的权利。自激活码发送后15天内，可无理由退款，退款后激活码立即过期。
-* 机器人现已开放API系统，如果你可以在此基础上构建其他场景应用，凡被采纳收纳入产品手册，均可获得激活码。
-* 前端代码开源，你可以通过持续的项目贡献（bug修复、代码重构、新功能、交互体验优化等有效PR）获得持续的使用时间。
-* PT站点管理组成员或其他核心成员凭身份标识，也可以领取激活码。
-
-**通过捐助作者，肯定作者的开发时间付出，可以获得激活码 [点击查看微信打赏码](https://yee-1254270141.cos.ap-beijing.myqcloud.com/movie_robot/pay.jpg) 打赏后加作者微信，未打赏不通过 yipengfei329 来获得激活码以及交流群。当然你也可以直接截图打赏记录，发送邮件到：yipengfei329@gmail.com**
-
-**永久买断是指，只要我还在用在维护，你永远享受免费更新的权利。假设因我个人或其他不可抗力原因无法继续维护程序，你将获得程序全部源代码或我选择开源到社区，由社区继续维护保证你持续可用。无论如何你不会损失使用权。当然你也可以赌我早点停止维护开源社区然后白嫖:)😂**
+找到一个你认识的永久用户朋友，也可以帮你开通1个月免费体验
 
 # Docker官方镜像
 https://registry.hub.docker.com/r/yipengfei/movie-robot/
@@ -52,10 +59,10 @@ https://github.com/pofey/movie-robot-frontend
 <img src="https://raw.githubusercontent.com/pofey/movie_robot/main/doc/images/search-ww.jpg" width="300" height="650"/><img src="https://raw.githubusercontent.com/pofey/movie_robot/main/doc/images/webui-downloading.jpg" width="300" height="650"/>
 
 ## 当前支持的站点
-几乎所有主流国内PT站点
+几乎所有主流国内PT站点，和RARBG
 
 # 赞赏一下
-<img src="https://yee-1254270141.cos.ap-beijing.myqcloud.com/movie_robot/pay.jpg" width="310" height="310" alt="赞赏码" style="float: left;"/>
-
+<img src="https://yee-1254270141.cos.ap-beijing.myqcloud.com/movie_robot/alipay.jpg" width="325" height="485" alt="赞赏码" style="float: left;"/>
+显示不全点开看。[点击查看支付宝付款码](https://yee-1254270141.cos.ap-beijing.myqcloud.com/movie_robot/alipay.jpg)
 # 作者微信
 微信号：yipengfei329
