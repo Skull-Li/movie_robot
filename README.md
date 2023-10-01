@@ -1,9 +1,10 @@
 # Movie Robot 产品手册
-Telegram Channel: https://t.me/aimovierobot 作者会及时把产品的更新日志，发展动态，发到这个频道。
+用户社区Discord：https://discord.gg/SMauZCXgKx
+这里有最全面的产品动态，实时问答，玩法分享，体验激活申请区
+
+TG Channel：https://t.me/aimovierobot 适合单项接收一些信息
 
 [Movie Robot WIki](https://yee329.notion.site/Movie-Robot-Wiki-9abef8c648c840fca47a0bf308957f85)
-* [开发计划](https://yee329.notion.site/7015972108424f14a1f2e15bde5205b4?v=6a041b4a727c48588134db8538e2b164)
-* [更新日志](https://yee329.notion.site/231dce04132642359e4a979e6b544ffd)
 
 **新人指南系列**
 * 1.[检查清单](https://www.notion.so/yee329/1-d8479e45ecbd4ed487726f86ddcfc3fd)
@@ -37,9 +38,7 @@ Telegram Channel: https://t.me/aimovierobot 作者会及时把产品的更新日
   * 全部媒体元数据，和媒体资源，均来自第三方网站
 
 # 使用须知
-**激活码获取方式：通过捐助作者168元为作者的开发以及后续持续更新所付出的时间买单来获得软件永久使用及更新的权利。[点击查看支付宝付款码](https://yee-1254270141.cos.ap-beijing.myqcloud.com/movie_robot/alipay.jpg) 支付后请备注邮箱接收激活码**
-
-找到一个你认识的永久用户朋友，也可以帮你开通1个月免费体验
+**本软件需付费购买激活码后可以使用，[付费方式&价格&权益介绍](https://yee329.notion.site/b712e719e79b47f58ff374737609d3be)**
 
 # Docker官方镜像
 https://registry.hub.docker.com/r/yipengfei/movie-robot/
@@ -47,22 +46,18 @@ https://registry.hub.docker.com/r/yipengfei/movie-robot/
 # 前端源代码
 https://github.com/pofey/movie-robot-frontend
 
+# 主程序可开源的源码
+程序中核心实现（事件处理、插件引擎），工具类，以及做插件开发时可能需要用到的内部实现全部开源，和主程序代码完全同步。为了插件开发者引用方便，代码独立到插件开发调试项目内。
+https://github.com/pofey/movie-bot-dev
+
 # 功能预览
 ## WebUI
 ### PC端：
 <img src="https://raw.githubusercontent.com/pofey/movie_robot/main/doc/images/sublist.jpg" width="926" height="551"/>
 <img src="https://raw.githubusercontent.com/pofey/movie_robot/main/doc/images/download_dashboard.jpg" width="926" height="551"/>
 <img src="https://raw.githubusercontent.com/pofey/movie_robot/main/doc/images/site_dashboard.jpg" width="926" height="551"/>
+<img src="https://raw.githubusercontent.com/pofey/movie_robot/main/doc/images/plugin_market.jpg" width="926" height="551"/>
 
 ### 移动端：
 <img src="https://raw.githubusercontent.com/pofey/movie_robot/main/doc/images/webui-search.jpg" width="300" height="650"/><img src="https://raw.githubusercontent.com/pofey/movie_robot/main/doc/images/webui-downloading-dark.jpg" width="300" height="650"/>
 <img src="https://raw.githubusercontent.com/pofey/movie_robot/main/doc/images/search-ww.jpg" width="300" height="650"/><img src="https://raw.githubusercontent.com/pofey/movie_robot/main/doc/images/webui-downloading.jpg" width="300" height="650"/>
-
-## 当前支持的站点
-几乎所有主流国内PT站点，和RARBG
-
-# 赞赏一下
-<img src="https://yee-1254270141.cos.ap-beijing.myqcloud.com/movie_robot/alipay.jpg" width="325" height="485" alt="赞赏码" style="float: left;"/>
-显示不全点开看。[点击查看支付宝付款码](https://yee-1254270141.cos.ap-beijing.myqcloud.com/movie_robot/alipay.jpg)
-# 作者微信
-微信号：yipengfei329
